@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Main Axis & Cross Axis</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 40px;
+            background: #f3f4f6;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+
+        }
+
+        .wrapper {
+            display: flex;
+            gap: 40px;
+
+
+        }
+
+        .demo {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid #ddd;
+            width: 45%;
+        }
+
+        .container {
+            border: 2px solid #000;
+            height: 250px;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+
+        }
+
+        .item {
+            background: #90e0ef;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            font-size: 22px;
+            text-align: center;
+            width: 60px;
+
+        }
+
+        .item:nth-child(2) {
+            background-color: #0a6d7f;
+
+        }
+
+        .item:nth-child(3) {
+            background-color: #052e36;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1> FlexBox: Main Axis vs Cross Axis </h1>
+    <div class="wrapper">
+        <div class="demo">
+            <div class="label"> Main axis = Row(Default)</div>
+            <div class="arrow">Main Axis direction-left to right </div>
+            <div class="arrow">Cross Axis direction-top to bottom </div>
+
+            <div class="container" style="justify-content: center; align-items:center ;">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+
+            </div>
+            <div class="demo">
+                <div class="label"> Main axis = Column (flex-direction:column;)</div>
+                <div class="arrow">Main Axis direction-Top to Bottom </div>
+                <div class="arrow">Cross Axis direction-left to Right</div>
+
+            </div>
+            <div class="container" style=" flex-direction:column; align-items:center ;justify-content: center;">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+
+
+            </div>
+
+</body>
+
+</html>

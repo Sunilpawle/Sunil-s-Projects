@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Cascade and Specificity</title>
+</head>
+
+<body>
+    <h1 id="cas">Cascade and Specificity</h1>
+    <p class="intro">This is a simple example to demonstrate cascade and specificity in CSS.</p>
+    <div class="con tainer">
+        <p>This paragraph is styled with a class selector.</p>
+        <p id="unique">This paragraph is styled with an ID selector.</p>
+        <p>This paragraph is styled with a type selector.</p>
+    </div>
+    <h2>Conclusion
+    </h2>
+    <p>In this example, the ID selector has the highest specificity, followed by the class selector, and then the type
+        selector. The styles will be applied according to their specificity and the cascade rules.</p>
+</body>
+
+</html>
